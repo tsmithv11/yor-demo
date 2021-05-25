@@ -13,6 +13,8 @@ on:
 jobs:
   yor:
     runs-on: ubuntu-latest
+    env:
+      YOR_SIMPLE_TAGS: '{"Schedule": "office-hours"}'
     steps:
       - uses: actions/checkout@v2
         name: Checkout repo
