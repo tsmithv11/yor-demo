@@ -42,7 +42,7 @@ resource "aws_instance" "web_server_instance" {
   count           = 1
   ami             = "ami-03d315ad33b9d49c4"
   instance_type   = "t2.micro"
-  security_groups = ["aws_security_group.ssh_traffic"]
+  security_groups = ["${aws_security_group.ssh_traffic.name}"]
   tags = {
     git_commit           = "574a6c6fe6a9ad14ffe966bae91a260f2fa0e76c"
     git_file             = "ec2.tf"
