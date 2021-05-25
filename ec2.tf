@@ -35,6 +35,7 @@ resource "aws_security_group" "ssh_traffic" {
     git_org              = "tsmithv11"
     git_repo             = "yor-demo"
     yor_trace            = "cd932137-f0e9-4e9f-8839-d5ecd60dd0d7"
+    Schedule             = "office-hours"
   }
 }
 
@@ -52,5 +53,6 @@ resource "aws_instance" "web_server_instance" {
     git_org              = "tsmithv11"
     git_repo             = "yor-demo"
     yor_trace            = "34ca75b3-9be8-446a-9c73-6c8edeb2d2e3"
+    Schedule             = "office-hours"
   }
 }
