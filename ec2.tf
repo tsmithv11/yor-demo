@@ -44,10 +44,10 @@ resource "aws_instance" "web_server_instance" {
   instance_type   = "t2.micro"
   security_groups = ["${aws_security_group.ssh_traffic.name}"]
   tags = {
-    git_commit           = "1363a7b650f2935a4b01e616925e379f33c47aa0"
+    git_commit           = "b688c3af1c42b8a433e02f09bb30bd99b9a1ac5b"
     git_file             = "ec2.tf"
-    git_last_modified_at = "2021-05-23 19:47:04"
-    git_last_modified_by = "41898282+github-actions[bot]@users.noreply.github.com"
+    git_last_modified_at = "2021-05-25 00:57:08"
+    git_last_modified_by = "28880387+tsmithv11@users.noreply.github.com"
     git_modifiers        = "28880387+tsmithv11/41898282+github-actions[bot]"
     git_org              = "tsmithv11"
     git_repo             = "yor-demo"
