@@ -7,7 +7,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "ssh_traffic" {
-  name        = "ssh_traffic"
+  name        = "ssh_traffic" 
   description = "Allow SSH inbound traffic"
 
   ingress {
@@ -39,7 +39,7 @@ resource "aws_security_group" "ssh_traffic" {
 }
 
 resource "aws_instance" "web_server_instance" {
-  count           = 1
+  count           = 1 
   ami             = "ami-03d315ad33b9d49c4"
   instance_type   = "t2.micro"
   security_groups = ["${aws_security_group.ssh_traffic.name}"]
